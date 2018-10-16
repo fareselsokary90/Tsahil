@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E2CF9702175E70400408DB1 /* CheckConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CF96C2175E70400408DB1 /* CheckConnection.swift */; };
+		7E2CF9712175E70400408DB1 /* RoundButtonCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CF96D2175E70400408DB1 /* RoundButtonCorners.swift */; };
+		7E2CF9722175E70400408DB1 /* GradiantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CF96E2175E70400408DB1 /* GradiantView.swift */; };
+		7E2CF9732175E70400408DB1 /* ImageBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CF96F2175E70400408DB1 /* ImageBorder.swift */; };
 		7E7167482175C71E0034ECCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7167472175C71E0034ECCB /* AppDelegate.swift */; };
 		7E71674A2175C71E0034ECCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7167492175C71E0034ECCB /* ViewController.swift */; };
 		7E71674D2175C71E0034ECCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E71674B2175C71E0034ECCB /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E2CF96C2175E70400408DB1 /* CheckConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckConnection.swift; sourceTree = "<group>"; };
+		7E2CF96D2175E70400408DB1 /* RoundButtonCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButtonCorners.swift; sourceTree = "<group>"; };
+		7E2CF96E2175E70400408DB1 /* GradiantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradiantView.swift; sourceTree = "<group>"; };
+		7E2CF96F2175E70400408DB1 /* ImageBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBorder.swift; sourceTree = "<group>"; };
 		7E7167442175C71E0034ECCB /* Tsahil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tsahil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7167472175C71E0034ECCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E7167492175C71E0034ECCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E2CF9692175E61300408DB1 /* controlers */ = {
+			isa = PBXGroup;
+			children = (
+				7E7167472175C71E0034ECCB /* AppDelegate.swift */,
+				7E7167492175C71E0034ECCB /* ViewController.swift */,
+			);
+			path = controlers;
+			sourceTree = "<group>";
+		};
+		7E2CF96A2175E6A500408DB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7E2CF96B2175E6CA00408DB1 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7E2CF96C2175E70400408DB1 /* CheckConnection.swift */,
+				7E2CF96E2175E70400408DB1 /* GradiantView.swift */,
+				7E2CF96F2175E70400408DB1 /* ImageBorder.swift */,
+				7E2CF96D2175E70400408DB1 /* RoundButtonCorners.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		7E71673B2175C71E0034ECCB = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +89,9 @@
 		7E7167462175C71E0034ECCB /* Tsahil */ = {
 			isa = PBXGroup;
 			children = (
-				7E7167472175C71E0034ECCB /* AppDelegate.swift */,
-				7E7167492175C71E0034ECCB /* ViewController.swift */,
+				7E2CF96B2175E6CA00408DB1 /* views */,
+				7E2CF96A2175E6A500408DB1 /* Model */,
+				7E2CF9692175E61300408DB1 /* controlers */,
 				7E71674B2175C71E0034ECCB /* Main.storyboard */,
 				7E71674E2175C71F0034ECCB /* Assets.xcassets */,
 				7E7167502175C71F0034ECCB /* LaunchScreen.storyboard */,
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E2CF9722175E70400408DB1 /* GradiantView.swift in Sources */,
+				7E2CF9702175E70400408DB1 /* CheckConnection.swift in Sources */,
 				7E71674A2175C71E0034ECCB /* ViewController.swift in Sources */,
 				7E7167482175C71E0034ECCB /* AppDelegate.swift in Sources */,
+				7E2CF9712175E70400408DB1 /* RoundButtonCorners.swift in Sources */,
+				7E2CF9732175E70400408DB1 /* ImageBorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
