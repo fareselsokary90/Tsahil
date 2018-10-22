@@ -16,13 +16,10 @@ class Home: UIViewController {
     @IBOutlet weak var dropList2: UITableView!
     @IBOutlet weak var dropList3: UITableView!
     
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textField0: UITextField!
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var textField3: UITextField!
-    
-    
-    
     
     
     
@@ -32,6 +29,7 @@ class Home: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        assignbackground()
+       
         // Do any additional setup after loading the view.
     }
     
@@ -63,20 +61,24 @@ class Home: UIViewController {
         }
         
     }
+    
+    
+    
     func toggleDropList(table : UITableView){
-        UIView.animate(withDuration: 0.4) {
+        UIView.animate(withDuration: 0.35) {
             if table.isHidden == true{
                 table.isHidden = false
             }else{
                 table.isHidden = true
             }
         }
-        
     }
+    
+
+    
     
     
     @IBAction func droplistButton(_ sender: UIButton) {
-        
         if sender.tag == 1{
             toggleDropList(table: dropList)
         }else if sender.tag == 2{
@@ -86,7 +88,21 @@ class Home: UIViewController {
         }else if sender.tag == 4{
             toggleDropList(table: dropList3)
         }
-        
+    }
+    
+    @IBAction func textField(_ sender: UITextField) {
+            dropList.isHidden = false
+    }
+    
+    @IBAction func textField1(_ sender: UITextField) {
+        dropList1.isHidden = false
+    }
+    @IBAction func textField2(_ sender: UITextField) {
+        dropList2.isHidden = false
+    }
+    
+    @IBAction func textField3(_ sender: UITextField) {
+        dropList3.isHidden = false
     }
     
     
@@ -106,7 +122,7 @@ extension Home : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView == dropList {
-        textField.text = list[indexPath.row]
+        textField0.text = list[indexPath.row]
         toggleDropList(table: dropList)
         }else if tableView == dropList1{
             textField1.text = list[indexPath.row]
@@ -118,9 +134,7 @@ extension Home : UITableViewDataSource, UITableViewDelegate {
             textField3.text = list[indexPath.row]
             toggleDropList(table: dropList3)
         }
-        
     }
     
-    
-    
 }
+

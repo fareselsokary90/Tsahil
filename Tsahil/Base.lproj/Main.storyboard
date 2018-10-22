@@ -864,11 +864,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxI-NO-pQT" userLabel="Round View1" customClass="RoundView" customModule="Tsahil" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="55"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F16-ts-i0z">
+                                                    <textField opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F16-ts-i0z">
                                                         <rect key="frame" x="22" y="13" width="272" height="29"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="textField:" destination="dZZ-Am-GMX" eventType="editingDidBegin" id="Kjs-ZE-JtH"/>
+                                                        </connections>
                                                     </textField>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcd-Ju-hPH">
                                                         <rect key="frame" x="302" y="21" width="13" height="13"/>
@@ -927,11 +930,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuM-my-vQk" userLabel="Round View1" customClass="RoundView" customModule="Tsahil" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="55"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ud9-tl-6Oo">
+                                                    <textField opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ud9-tl-6Oo">
                                                         <rect key="frame" x="22" y="13" width="272" height="29"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="textField1:" destination="dZZ-Am-GMX" eventType="editingDidBegin" id="h1p-y0-JGD"/>
+                                                        </connections>
                                                     </textField>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMN-Mv-UvK">
                                                         <rect key="frame" x="302" y="21" width="13" height="13"/>
@@ -991,11 +997,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="heT-Dt-HAX" userLabel="Round View3" customClass="RoundView" customModule="Tsahil" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="55"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iP7-Co-uJ1">
+                                                    <textField opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iP7-Co-uJ1">
                                                         <rect key="frame" x="22" y="13" width="272" height="29"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="textField2:" destination="dZZ-Am-GMX" eventType="editingDidBegin" id="SVg-rf-Ob2"/>
+                                                        </connections>
                                                     </textField>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2o-qK-kSz">
                                                         <rect key="frame" x="302" y="21" width="13" height="13"/>
@@ -1056,11 +1065,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A8K-zd-iTM" userLabel="Round View4" customClass="RoundView" customModule="Tsahil" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="55"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="79e-fn-BaU">
+                                                    <textField opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="79e-fn-BaU">
                                                         <rect key="frame" x="22" y="13" width="272" height="29"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="textField3:" destination="dZZ-Am-GMX" eventType="editingDidBegin" id="tOe-kb-K1k"/>
+                                                        </connections>
                                                     </textField>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOU-wu-szN">
                                                         <rect key="frame" x="302" y="21" width="13" height="13"/>
@@ -1174,7 +1186,7 @@
                         <outlet property="dropList1" destination="YI3-pP-xsR" id="g8B-bn-5m7"/>
                         <outlet property="dropList2" destination="6Xj-iF-rld" id="SSv-81-cxw"/>
                         <outlet property="dropList3" destination="TlN-b3-C9i" id="XQ9-MC-qRn"/>
-                        <outlet property="textField" destination="F16-ts-i0z" id="rG0-8E-p7h"/>
+                        <outlet property="textField0" destination="F16-ts-i0z" id="jTt-G7-gVC"/>
                         <outlet property="textField1" destination="Ud9-tl-6Oo" id="BB8-kx-88S"/>
                         <outlet property="textField2" destination="iP7-Co-uJ1" id="uVi-aQ-JUD"/>
                         <outlet property="textField3" destination="79e-fn-BaU" id="Zgd-1d-acQ"/>
