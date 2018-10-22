@@ -11,25 +11,43 @@
 		7E2CF9712175E70400408DB1 /* RoundButtonCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CF96D2175E70400408DB1 /* RoundButtonCorners.swift */; };
 		7E2CF9722175E70400408DB1 /* GradiantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CF96E2175E70400408DB1 /* GradiantView.swift */; };
 		7E2CF9732175E70400408DB1 /* ImageBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CF96F2175E70400408DB1 /* ImageBorder.swift */; };
+		7E2CF9752176119600408DB1 /* RoungView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CF9742176119600408DB1 /* RoungView.swift */; };
+		7E2CF97721761BDC00408DB1 /* RoundTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CF97621761BDC00408DB1 /* RoundTextfield.swift */; };
+		7E2CF9792176215A00408DB1 /* radioButtonCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CF9782176215A00408DB1 /* radioButtonCheckBox.swift */; };
+		7E2CF97B2176232800408DB1 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CF97A2176232800408DB1 /* SignIn.swift */; };
 		7E7167482175C71E0034ECCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7167472175C71E0034ECCB /* AppDelegate.swift */; };
-		7E71674A2175C71E0034ECCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7167492175C71E0034ECCB /* ViewController.swift */; };
+		7E71674A2175C71E0034ECCB /* SignInOrSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7167492175C71E0034ECCB /* SignInOrSignUp.swift */; };
 		7E71674D2175C71E0034ECCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E71674B2175C71E0034ECCB /* Main.storyboard */; };
 		7E71674F2175C71F0034ECCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E71674E2175C71F0034ECCB /* Assets.xcassets */; };
 		7E7167522175C71F0034ECCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7167502175C71F0034ECCB /* LaunchScreen.storyboard */; };
+		7E83691221786DA5001881AF /* ForfetPasswordPhoneNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83691121786DA5001881AF /* ForfetPasswordPhoneNum.swift */; };
+		7E88383221772D7300DB90D2 /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E88383121772D7300DB90D2 /* ChangePassword.swift */; };
+		7E88383421774A2600DB90D2 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E88383321774A2600DB90D2 /* SignUp.swift */; };
+		EE78B4B718A97A09A8610608 /* Pods_Tsahil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C2DB5723EA922B6FE26AC0 /* Pods_Tsahil.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07C2DB5723EA922B6FE26AC0 /* Pods_Tsahil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tsahil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2CF96C2175E70400408DB1 /* CheckConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckConnection.swift; sourceTree = "<group>"; };
 		7E2CF96D2175E70400408DB1 /* RoundButtonCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButtonCorners.swift; sourceTree = "<group>"; };
 		7E2CF96E2175E70400408DB1 /* GradiantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradiantView.swift; sourceTree = "<group>"; };
 		7E2CF96F2175E70400408DB1 /* ImageBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBorder.swift; sourceTree = "<group>"; };
+		7E2CF9742176119600408DB1 /* RoungView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoungView.swift; sourceTree = "<group>"; };
+		7E2CF97621761BDC00408DB1 /* RoundTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextfield.swift; sourceTree = "<group>"; };
+		7E2CF9782176215A00408DB1 /* radioButtonCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radioButtonCheckBox.swift; sourceTree = "<group>"; };
+		7E2CF97A2176232800408DB1 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		7E7167442175C71E0034ECCB /* Tsahil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tsahil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7167472175C71E0034ECCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E7167492175C71E0034ECCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E7167492175C71E0034ECCB /* SignInOrSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInOrSignUp.swift; sourceTree = "<group>"; };
 		7E71674C2175C71E0034ECCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E71674E2175C71F0034ECCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E7167512175C71F0034ECCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E7167532175C71F0034ECCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E83691121786DA5001881AF /* ForfetPasswordPhoneNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForfetPasswordPhoneNum.swift; sourceTree = "<group>"; };
+		7E88383121772D7300DB90D2 /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
+		7E88383321774A2600DB90D2 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		7F4F2F2F3D27941D06201D2E /* Pods-Tsahil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tsahil.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tsahil/Pods-Tsahil.release.xcconfig"; sourceTree = "<group>"; };
+		90C9557A4CED1FDA1615D0FD /* Pods-Tsahil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tsahil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tsahil/Pods-Tsahil.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE78B4B718A97A09A8610608 /* Pods_Tsahil.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +66,11 @@
 			isa = PBXGroup;
 			children = (
 				7E7167472175C71E0034ECCB /* AppDelegate.swift */,
-				7E7167492175C71E0034ECCB /* ViewController.swift */,
+				7E7167492175C71E0034ECCB /* SignInOrSignUp.swift */,
+				7E2CF97A2176232800408DB1 /* SignIn.swift */,
+				7E88383121772D7300DB90D2 /* ChangePassword.swift */,
+				7E88383321774A2600DB90D2 /* SignUp.swift */,
+				7E83691121786DA5001881AF /* ForfetPasswordPhoneNum.swift */,
 			);
 			path = controlers;
 			sourceTree = "<group>";
@@ -66,6 +89,9 @@
 				7E2CF96E2175E70400408DB1 /* GradiantView.swift */,
 				7E2CF96F2175E70400408DB1 /* ImageBorder.swift */,
 				7E2CF96D2175E70400408DB1 /* RoundButtonCorners.swift */,
+				7E2CF9742176119600408DB1 /* RoungView.swift */,
+				7E2CF97621761BDC00408DB1 /* RoundTextfield.swift */,
+				7E2CF9782176215A00408DB1 /* radioButtonCheckBox.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -75,6 +101,8 @@
 			children = (
 				7E7167462175C71E0034ECCB /* Tsahil */,
 				7E7167452175C71E0034ECCB /* Products */,
+				A68EDE67D2767B6F325479B0 /* Pods */,
+				F9512D53079AF46E3B99CED8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +128,23 @@
 			path = Tsahil;
 			sourceTree = "<group>";
 		};
+		A68EDE67D2767B6F325479B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90C9557A4CED1FDA1615D0FD /* Pods-Tsahil.debug.xcconfig */,
+				7F4F2F2F3D27941D06201D2E /* Pods-Tsahil.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9512D53079AF46E3B99CED8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07C2DB5723EA922B6FE26AC0 /* Pods_Tsahil.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +152,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E7167562175C71F0034ECCB /* Build configuration list for PBXNativeTarget "Tsahil" */;
 			buildPhases = (
+				4045D7E81D00467E8D25B2C5 /* [CP] Check Pods Manifest.lock */,
 				7E7167402175C71E0034ECCB /* Sources */,
 				7E7167412175C71E0034ECCB /* Frameworks */,
 				7E7167422175C71E0034ECCB /* Resources */,
@@ -166,17 +212,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4045D7E81D00467E8D25B2C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tsahil-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7E7167402175C71E0034ECCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E83691221786DA5001881AF /* ForfetPasswordPhoneNum.swift in Sources */,
+				7E2CF9792176215A00408DB1 /* radioButtonCheckBox.swift in Sources */,
+				7E88383421774A2600DB90D2 /* SignUp.swift in Sources */,
+				7E2CF97721761BDC00408DB1 /* RoundTextfield.swift in Sources */,
 				7E2CF9722175E70400408DB1 /* GradiantView.swift in Sources */,
 				7E2CF9702175E70400408DB1 /* CheckConnection.swift in Sources */,
-				7E71674A2175C71E0034ECCB /* ViewController.swift in Sources */,
+				7E71674A2175C71E0034ECCB /* SignInOrSignUp.swift in Sources */,
 				7E7167482175C71E0034ECCB /* AppDelegate.swift in Sources */,
 				7E2CF9712175E70400408DB1 /* RoundButtonCorners.swift in Sources */,
+				7E2CF97B2176232800408DB1 /* SignIn.swift in Sources */,
+				7E88383221772D7300DB90D2 /* ChangePassword.swift in Sources */,
 				7E2CF9732175E70400408DB1 /* ImageBorder.swift in Sources */,
+				7E2CF9752176119600408DB1 /* RoungView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +398,7 @@
 		};
 		7E7167572175C71F0034ECCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90C9557A4CED1FDA1615D0FD /* Pods-Tsahil.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -337,6 +416,7 @@
 		};
 		7E7167582175C71F0034ECCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F4F2F2F3D27941D06201D2E /* Pods-Tsahil.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

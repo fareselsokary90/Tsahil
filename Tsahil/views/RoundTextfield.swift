@@ -1,20 +1,20 @@
 //
-//  RoundButtonCorners.swift
-//  Doctor booking
+//  RoundTextfield.swift
+//  Tsahil
 //
-//  Created by fares elsokary on 10/7/18.
-//  Copyright © 2018 FaresElsokary. All rights reserved.
+//  Created by fares elsokary on 10/16/18.
+//  Copyright © 2018 elryad. All rights reserved.
 //
 
 import UIKit
+
 @IBDesignable
-class RoundButtonCorners: UIButton {
+class RoundTextfield : UITextField {
     @IBInspectable var CornerRadius :CGFloat = 0{
         didSet{
+            
             self.layer.cornerRadius = CornerRadius
-            self.titleLabel?.minimumScaleFactor = 0.5
-            self.titleLabel?.numberOfLines = 0
-            self.titleLabel?.adjustsFontSizeToFitWidth = true
+            self.clipsToBounds = true
         }
     }
     @IBInspectable var BorderWidth :CGFloat = 0{

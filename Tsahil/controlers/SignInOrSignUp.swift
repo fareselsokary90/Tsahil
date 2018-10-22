@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SignInOrSignUp: UIViewController {
 
+    @IBOutlet weak var logoStackView: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
 
+    
+    
+    
 }
 

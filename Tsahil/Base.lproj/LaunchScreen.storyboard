@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +14,65 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qx6-jZ-Fee">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Slpash-BG" translatesAutoresizingMaskIntoConstraints="NO" id="6E1-de-6cd">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo1" translatesAutoresizingMaskIntoConstraints="NO" id="rbi-Uz-ezf">
+                                        <rect key="frame" x="82" y="280.66666666666669" width="250" height="235.00000000000006"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="235" id="Fpx-G9-Z7q"/>
+                                            <constraint firstAttribute="width" constant="250" id="KLr-yy-Ivx"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="235" id="fVo-9H-yYp"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="zdB-60-pS4"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car service , Closer and easier now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gG2-RP-9T9">
+                                        <rect key="frame" x="82" y="525.66666666666663" width="250" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="tgp-6n-4Sy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="rbi-Uz-ezf" firstAttribute="centerY" secondItem="qx6-jZ-Fee" secondAttribute="centerY" constant="-50" id="6Hb-Vq-hjs"/>
+                                    <constraint firstAttribute="trailing" secondItem="6E1-de-6cd" secondAttribute="trailing" id="BMQ-QZ-TS3"/>
+                                    <constraint firstItem="6E1-de-6cd" firstAttribute="top" secondItem="qx6-jZ-Fee" secondAttribute="top" id="GmM-EO-z7j"/>
+                                    <constraint firstItem="gG2-RP-9T9" firstAttribute="leading" secondItem="rbi-Uz-ezf" secondAttribute="leading" id="NEw-WA-ZRJ"/>
+                                    <constraint firstItem="rbi-Uz-ezf" firstAttribute="centerX" secondItem="qx6-jZ-Fee" secondAttribute="centerX" id="WfC-a9-sXl"/>
+                                    <constraint firstAttribute="bottom" secondItem="6E1-de-6cd" secondAttribute="bottom" id="XWq-6z-IoK"/>
+                                    <constraint firstItem="gG2-RP-9T9" firstAttribute="trailing" secondItem="rbi-Uz-ezf" secondAttribute="trailing" id="YY0-pR-AJ1"/>
+                                    <constraint firstItem="gG2-RP-9T9" firstAttribute="top" secondItem="rbi-Uz-ezf" secondAttribute="bottom" constant="10" id="feV-ux-qh4"/>
+                                    <constraint firstItem="6E1-de-6cd" firstAttribute="leading" secondItem="qx6-jZ-Fee" secondAttribute="leading" id="oad-QM-la6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qx6-jZ-Fee" secondAttribute="trailing" id="Lmg-gl-7nv"/>
+                            <constraint firstAttribute="bottom" secondItem="qx6-jZ-Fee" secondAttribute="bottom" id="eMj-CW-xTP"/>
+                            <constraint firstItem="qx6-jZ-Fee" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jpJ-Cn-Oph"/>
+                            <constraint firstItem="qx6-jZ-Fee" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="uXl-K9-983"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="373.76311844077964"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo1" width="209" height="235"/>
+        <image name="Slpash-BG" width="360" height="548"/>
+    </resources>
 </document>
