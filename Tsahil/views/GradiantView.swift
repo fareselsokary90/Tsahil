@@ -34,4 +34,6 @@ class GradiantView: UIView {
         let layers = self.layer as! CAGradientLayer
         layers.colors = [FirstColor.cgColor ,SecondColor.cgColor]
     }
+    
+    
 }

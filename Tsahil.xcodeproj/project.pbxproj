@@ -23,6 +23,9 @@
 		7E83691221786DA5001881AF /* ForfetPasswordPhoneNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83691121786DA5001881AF /* ForfetPasswordPhoneNum.swift */; };
 		7E88383221772D7300DB90D2 /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E88383121772D7300DB90D2 /* ChangePassword.swift */; };
 		7E88383421774A2600DB90D2 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E88383321774A2600DB90D2 /* SignUp.swift */; };
+		7E8D2C34217DB1DB008941A6 /* sideMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8D2C32217DB1DB008941A6 /* sideMenu.xib */; };
+		7E8D2C35217DB1DB008941A6 /* sideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D2C33217DB1DB008941A6 /* sideMenu.swift */; };
+		7E8D2C37217DB9D1008941A6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D2C36217DB9D1008941A6 /* Home.swift */; };
 		EE78B4B718A97A09A8610608 /* Pods_Tsahil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C2DB5723EA922B6FE26AC0 /* Pods_Tsahil.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,9 @@
 		7E83691121786DA5001881AF /* ForfetPasswordPhoneNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForfetPasswordPhoneNum.swift; sourceTree = "<group>"; };
 		7E88383121772D7300DB90D2 /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
 		7E88383321774A2600DB90D2 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		7E8D2C32217DB1DB008941A6 /* sideMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = sideMenu.xib; sourceTree = "<group>"; };
+		7E8D2C33217DB1DB008941A6 /* sideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideMenu.swift; sourceTree = "<group>"; };
+		7E8D2C36217DB9D1008941A6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		7F4F2F2F3D27941D06201D2E /* Pods-Tsahil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tsahil.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tsahil/Pods-Tsahil.release.xcconfig"; sourceTree = "<group>"; };
 		90C9557A4CED1FDA1615D0FD /* Pods-Tsahil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tsahil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tsahil/Pods-Tsahil.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +77,7 @@
 				7E88383121772D7300DB90D2 /* ChangePassword.swift */,
 				7E88383321774A2600DB90D2 /* SignUp.swift */,
 				7E83691121786DA5001881AF /* ForfetPasswordPhoneNum.swift */,
+				7E8D2C36217DB9D1008941A6 /* Home.swift */,
 			);
 			path = controlers;
 			sourceTree = "<group>";
@@ -117,6 +124,7 @@
 		7E7167462175C71E0034ECCB /* Tsahil */ = {
 			isa = PBXGroup;
 			children = (
+				7E8D2C31217DB1AF008941A6 /* sideMenu */,
 				7E2CF96B2175E6CA00408DB1 /* views */,
 				7E2CF96A2175E6A500408DB1 /* Model */,
 				7E2CF9692175E61300408DB1 /* controlers */,
@@ -126,6 +134,15 @@
 				7E7167532175C71F0034ECCB /* Info.plist */,
 			);
 			path = Tsahil;
+			sourceTree = "<group>";
+		};
+		7E8D2C31217DB1AF008941A6 /* sideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				7E8D2C33217DB1DB008941A6 /* sideMenu.swift */,
+				7E8D2C32217DB1DB008941A6 /* sideMenu.xib */,
+			);
+			path = sideMenu;
 			sourceTree = "<group>";
 		};
 		A68EDE67D2767B6F325479B0 /* Pods */ = {
@@ -207,6 +224,7 @@
 				7E7167522175C71F0034ECCB /* LaunchScreen.storyboard in Resources */,
 				7E71674F2175C71F0034ECCB /* Assets.xcassets in Resources */,
 				7E71674D2175C71E0034ECCB /* Main.storyboard in Resources */,
+				7E8D2C34217DB1DB008941A6 /* sideMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +267,12 @@
 				7E2CF9722175E70400408DB1 /* GradiantView.swift in Sources */,
 				7E2CF9702175E70400408DB1 /* CheckConnection.swift in Sources */,
 				7E71674A2175C71E0034ECCB /* SignInOrSignUp.swift in Sources */,
+				7E8D2C37217DB9D1008941A6 /* Home.swift in Sources */,
 				7E7167482175C71E0034ECCB /* AppDelegate.swift in Sources */,
 				7E2CF9712175E70400408DB1 /* RoundButtonCorners.swift in Sources */,
 				7E2CF97B2176232800408DB1 /* SignIn.swift in Sources */,
 				7E88383221772D7300DB90D2 /* ChangePassword.swift in Sources */,
+				7E8D2C35217DB1DB008941A6 /* sideMenu.swift in Sources */,
 				7E2CF9732175E70400408DB1 /* ImageBorder.swift in Sources */,
 				7E2CF9752176119600408DB1 /* RoungView.swift in Sources */,
 			);
