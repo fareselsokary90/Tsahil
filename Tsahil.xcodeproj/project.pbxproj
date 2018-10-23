@@ -18,11 +18,13 @@
 		7E7167482175C71E0034ECCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7167472175C71E0034ECCB /* AppDelegate.swift */; };
 		7E71674A2175C71E0034ECCB /* SignInOrSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7167492175C71E0034ECCB /* SignInOrSignUp.swift */; };
 		7E71674D2175C71E0034ECCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E71674B2175C71E0034ECCB /* Main.storyboard */; };
-		7E71674F2175C71F0034ECCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E71674E2175C71F0034ECCB /* Assets.xcassets */; };
 		7E7167522175C71F0034ECCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E7167502175C71F0034ECCB /* LaunchScreen.storyboard */; };
 		7E83691221786DA5001881AF /* ForfetPasswordPhoneNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83691121786DA5001881AF /* ForfetPasswordPhoneNum.swift */; };
 		7E88383221772D7300DB90D2 /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E88383121772D7300DB90D2 /* ChangePassword.swift */; };
 		7E88383421774A2600DB90D2 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E88383321774A2600DB90D2 /* SignUp.swift */; };
+		7E8CC0D4217F0F0A00D4ABB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E8CC0D3217F0F0A00D4ABB1 /* Assets.xcassets */; };
+		7E8CC0D6217F30F100D4ABB1 /* ResultOnMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8CC0D5217F30F100D4ABB1 /* ResultOnMapViewController.swift */; };
+		7E8CC0D8217F31B600D4ABB1 /* mapResultOnTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8CC0D7217F31B600D4ABB1 /* mapResultOnTable.swift */; };
 		7E8D2C34217DB1DB008941A6 /* sideMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8D2C32217DB1DB008941A6 /* sideMenu.xib */; };
 		7E8D2C35217DB1DB008941A6 /* sideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D2C33217DB1DB008941A6 /* sideMenu.swift */; };
 		7E8D2C37217DB9D1008941A6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D2C36217DB9D1008941A6 /* Home.swift */; };
@@ -43,12 +45,14 @@
 		7E7167472175C71E0034ECCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E7167492175C71E0034ECCB /* SignInOrSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInOrSignUp.swift; sourceTree = "<group>"; };
 		7E71674C2175C71E0034ECCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7E71674E2175C71F0034ECCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E7167512175C71F0034ECCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E7167532175C71F0034ECCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E83691121786DA5001881AF /* ForfetPasswordPhoneNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForfetPasswordPhoneNum.swift; sourceTree = "<group>"; };
 		7E88383121772D7300DB90D2 /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
 		7E88383321774A2600DB90D2 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		7E8CC0D3217F0F0A00D4ABB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E8CC0D5217F30F100D4ABB1 /* ResultOnMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultOnMapViewController.swift; sourceTree = "<group>"; };
+		7E8CC0D7217F31B600D4ABB1 /* mapResultOnTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapResultOnTable.swift; sourceTree = "<group>"; };
 		7E8D2C32217DB1DB008941A6 /* sideMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = sideMenu.xib; sourceTree = "<group>"; };
 		7E8D2C33217DB1DB008941A6 /* sideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideMenu.swift; sourceTree = "<group>"; };
 		7E8D2C36217DB9D1008941A6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				7E88383321774A2600DB90D2 /* SignUp.swift */,
 				7E83691121786DA5001881AF /* ForfetPasswordPhoneNum.swift */,
 				7E8D2C36217DB9D1008941A6 /* Home.swift */,
+				7E8CC0D5217F30F100D4ABB1 /* ResultOnMapViewController.swift */,
+				7E8CC0D7217F31B600D4ABB1 /* mapResultOnTable.swift */,
 			);
 			path = controlers;
 			sourceTree = "<group>";
@@ -129,7 +135,7 @@
 				7E2CF96A2175E6A500408DB1 /* Model */,
 				7E2CF9692175E61300408DB1 /* controlers */,
 				7E71674B2175C71E0034ECCB /* Main.storyboard */,
-				7E71674E2175C71F0034ECCB /* Assets.xcassets */,
+				7E8CC0D3217F0F0A00D4ABB1 /* Assets.xcassets */,
 				7E7167502175C71F0034ECCB /* LaunchScreen.storyboard */,
 				7E7167532175C71F0034ECCB /* Info.plist */,
 			);
@@ -222,8 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E7167522175C71F0034ECCB /* LaunchScreen.storyboard in Resources */,
-				7E71674F2175C71F0034ECCB /* Assets.xcassets in Resources */,
 				7E71674D2175C71E0034ECCB /* Main.storyboard in Resources */,
+				7E8CC0D4217F0F0A00D4ABB1 /* Assets.xcassets in Resources */,
 				7E8D2C34217DB1DB008941A6 /* sideMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +268,9 @@
 			files = (
 				7E83691221786DA5001881AF /* ForfetPasswordPhoneNum.swift in Sources */,
 				7E2CF9792176215A00408DB1 /* radioButtonCheckBox.swift in Sources */,
+				7E8CC0D8217F31B600D4ABB1 /* mapResultOnTable.swift in Sources */,
 				7E88383421774A2600DB90D2 /* SignUp.swift in Sources */,
+				7E8CC0D6217F30F100D4ABB1 /* ResultOnMapViewController.swift in Sources */,
 				7E2CF97721761BDC00408DB1 /* RoundTextfield.swift in Sources */,
 				7E2CF9722175E70400408DB1 /* GradiantView.swift in Sources */,
 				7E2CF9702175E70400408DB1 /* CheckConnection.swift in Sources */,

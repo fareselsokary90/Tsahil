@@ -9,20 +9,43 @@
 import UIKit
 
 class sideMenu: UIViewController {
+    
+    
+    
+     
+    
 
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var button4: UIButton!
+    
     @IBOutlet weak var SideView: UIView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      
+       
+        
 
         let tapGesture = UITapGestureRecognizer.init(target: self, action: #selector(closeSideMenu))
         tapGesture.numberOfTapsRequired = 1
         self.view.addGestureRecognizer(tapGesture)
     }
 
+    
+    
+    
+    
+    
+    
+    
 
    @objc func closeSideMenu(){
-       
         UIView.animate(withDuration: 0.3, animations: {
             var frame = self.view.frame
             frame.origin.x = -UIScreen.main.bounds.size.width
@@ -38,4 +61,30 @@ class sideMenu: UIViewController {
 //        self.present(viewControler, animated: false, completion: nil)
 //    }
     
+    
+    func toggleButtonBackground(sender : UIButton){
+        if sender.isSelected == true{
+            sender.backgroundColor = UIColor.black
+            print("ok")
+        }
+    }
+    
+    
+    
+    @IBAction func home(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func Request(_ sender: UIButton) {
+    }
+    
+    @IBAction func setting(_ sender: UIButton) {
+    }
+    
+    @IBAction func notification(_ sender: UIButton) {
+    }
+    
+    @IBAction func contactUS(_ sender: Any) {
+    }
 }
+
