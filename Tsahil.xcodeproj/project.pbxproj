@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E0F97972180B65A00E9E622 /* WorkShopProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F97962180B65A00E9E622 /* WorkShopProfile.swift */; };
+		7E0F979921819A2E00E9E622 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F979821819A2E00E9E622 /* MenuCollectionViewCell.swift */; };
+		7E0F979B2181C1A600E9E622 /* ReviewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F979A2181C1A600E9E622 /* ReviewCellTableViewCell.swift */; };
 		7E2CF9702175E70400408DB1 /* CheckConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CF96C2175E70400408DB1 /* CheckConnection.swift */; };
 		7E2CF9712175E70400408DB1 /* RoundButtonCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CF96D2175E70400408DB1 /* RoundButtonCorners.swift */; };
 		7E2CF9722175E70400408DB1 /* GradiantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2CF96E2175E70400408DB1 /* GradiantView.swift */; };
@@ -33,6 +36,9 @@
 
 /* Begin PBXFileReference section */
 		07C2DB5723EA922B6FE26AC0 /* Pods_Tsahil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tsahil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0F97962180B65A00E9E622 /* WorkShopProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkShopProfile.swift; sourceTree = "<group>"; };
+		7E0F979821819A2E00E9E622 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		7E0F979A2181C1A600E9E622 /* ReviewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCellTableViewCell.swift; sourceTree = "<group>"; };
 		7E2CF96C2175E70400408DB1 /* CheckConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckConnection.swift; sourceTree = "<group>"; };
 		7E2CF96D2175E70400408DB1 /* RoundButtonCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButtonCorners.swift; sourceTree = "<group>"; };
 		7E2CF96E2175E70400408DB1 /* GradiantView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradiantView.swift; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 				7E8D2C36217DB9D1008941A6 /* Home.swift */,
 				7E8CC0D5217F30F100D4ABB1 /* ResultOnMapViewController.swift */,
 				7E8CC0D7217F31B600D4ABB1 /* mapResultOnTable.swift */,
+				7E0F97962180B65A00E9E622 /* WorkShopProfile.swift */,
 			);
 			path = controlers;
 			sourceTree = "<group>";
@@ -105,6 +112,8 @@
 				7E2CF9742176119600408DB1 /* RoungView.swift */,
 				7E2CF97621761BDC00408DB1 /* RoundTextfield.swift */,
 				7E2CF9782176215A00408DB1 /* radioButtonCheckBox.swift */,
+				7E0F979821819A2E00E9E622 /* MenuCollectionViewCell.swift */,
+				7E0F979A2181C1A600E9E622 /* ReviewCellTableViewCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -136,8 +145,8 @@
 				7E2CF9692175E61300408DB1 /* controlers */,
 				7E71674B2175C71E0034ECCB /* Main.storyboard */,
 				7E8CC0D3217F0F0A00D4ABB1 /* Assets.xcassets */,
-				7E7167502175C71F0034ECCB /* LaunchScreen.storyboard */,
 				7E7167532175C71F0034ECCB /* Info.plist */,
+				7E7167502175C71F0034ECCB /* LaunchScreen.storyboard */,
 			);
 			path = Tsahil;
 			sourceTree = "<group>";
@@ -179,6 +188,7 @@
 				7E7167402175C71E0034ECCB /* Sources */,
 				7E7167412175C71E0034ECCB /* Frameworks */,
 				7E7167422175C71E0034ECCB /* Resources */,
+				F036A2632180A2E4A5590D06 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +269,32 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F036A2632180A2E4A5590D06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tsahil/Pods-Tsahil-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tsahil/Pods-Tsahil-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -276,8 +312,11 @@
 				7E2CF9702175E70400408DB1 /* CheckConnection.swift in Sources */,
 				7E71674A2175C71E0034ECCB /* SignInOrSignUp.swift in Sources */,
 				7E8D2C37217DB9D1008941A6 /* Home.swift in Sources */,
+				7E0F97972180B65A00E9E622 /* WorkShopProfile.swift in Sources */,
 				7E7167482175C71E0034ECCB /* AppDelegate.swift in Sources */,
 				7E2CF9712175E70400408DB1 /* RoundButtonCorners.swift in Sources */,
+				7E0F979B2181C1A600E9E622 /* ReviewCellTableViewCell.swift in Sources */,
+				7E0F979921819A2E00E9E622 /* MenuCollectionViewCell.swift in Sources */,
 				7E2CF97B2176232800408DB1 /* SignIn.swift in Sources */,
 				7E88383221772D7300DB90D2 /* ChangePassword.swift in Sources */,
 				7E8D2C35217DB1DB008941A6 /* sideMenu.swift in Sources */,

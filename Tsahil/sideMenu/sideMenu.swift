@@ -28,13 +28,15 @@ class sideMenu: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      
+        let swipeleft = UISwipeGestureRecognizer(target: self, action: #selector(closeSideMenu))
+        swipeleft.direction = .left
+        self.view.addGestureRecognizer(swipeleft)
        
         
 
-        let tapGesture = UITapGestureRecognizer.init(target: self, action: #selector(closeSideMenu))
-        tapGesture.numberOfTapsRequired = 1
-        self.view.addGestureRecognizer(tapGesture)
+//        let tapGesture = UITapGestureRecognizer.init(target: self, action: #selector(closeSideMenu))
+//        tapGesture.numberOfTapsRequired = 1
+//        self.view.addGestureRecognizer(tapGesture)
     }
 
     

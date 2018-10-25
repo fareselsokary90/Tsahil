@@ -29,7 +29,9 @@ class Home: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        assignbackground()
-       
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(ShowLeftMenu))
+        swipeRight.direction = .right
+        self.view.addGestureRecognizer(swipeRight)
         // Do any additional setup after loading the view.
     }
     
@@ -48,7 +50,11 @@ class Home: UIViewController {
         self.view.sendSubviewToBack(imageView)
     }
 
-    @IBAction func showLetMenu(_ sender: Any) {
+   
+    
+    
+    
+   @objc func ShowLeftMenu(){
         let leftMEnu = sideMenu.init(nibName: "sideMenu", bundle: nil)
         var frame = leftMEnu.view.frame
         frame.origin.x = -UIScreen.main.bounds.size.width
@@ -59,7 +65,6 @@ class Home: UIViewController {
             frame.origin.x = 0
             leftMEnu.view.frame = frame
         }
-        
     }
     
     
@@ -73,8 +78,6 @@ class Home: UIViewController {
             }
         }
     }
-    
-
     
     
     
@@ -105,7 +108,10 @@ class Home: UIViewController {
         dropList3.isHidden = false
     }
     
-    
+    @IBAction func showLeftMenu(_ sender: Any) {
+        ShowLeftMenu()
+        
+    }
 
 }
 extension Home : UITableViewDataSource, UITableViewDelegate {

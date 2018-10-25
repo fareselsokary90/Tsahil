@@ -17,14 +17,15 @@ class ResultOnMapViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
-    */
-
+    
+    
+    
+    @IBAction func showMapResult(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mapResultOnTable") as! mapResultOnTable
+        present(storyboard, animated : true, completion : nil)
+    }
 }
