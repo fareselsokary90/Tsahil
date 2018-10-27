@@ -45,6 +45,9 @@ class ClinteProfile: UIViewController {
         ShowLeftMenu()
     }
     
+    @IBAction func ColseButton(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }
 extension ClinteProfile : UICollectionViewDelegate ,UICollectionViewDataSource{

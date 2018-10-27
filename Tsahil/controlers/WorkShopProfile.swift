@@ -192,6 +192,9 @@ class WorkShopProfile: UIViewController {
         ShowLeftMenu()
     }
     
+    @IBAction func CloseButton(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }
 
