@@ -36,6 +36,19 @@ class Home: UIViewController {
     }
     
     
+    @objc func ShowLeftMenu(){
+        let leftMEnu = sideMenu.init(nibName: "sideMenu", bundle: nil)
+        var frame = leftMEnu.view.frame
+        frame.origin.x = -UIScreen.main.bounds.size.width
+        leftMEnu.view.frame = frame
+        self.addChild(leftMEnu)
+        self.view.addSubview(leftMEnu.view)
+        UIView.animate(withDuration: 0.4) {
+            frame.origin.x = 0
+            leftMEnu.view.frame = frame
+        }
+    }
+    
     func assignbackground(){
         // self.view.backgroundColor = UIColor(white: CGFloat(ffffff), alpha: 1)
         let background = UIImage(named: "Slpash-BG")
@@ -54,18 +67,7 @@ class Home: UIViewController {
     
     
     
-   @objc func ShowLeftMenu(){
-        let leftMEnu = sideMenu.init(nibName: "sideMenu", bundle: nil)
-        var frame = leftMEnu.view.frame
-        frame.origin.x = -UIScreen.main.bounds.size.width
-        leftMEnu.view.frame = frame
-        self.addChild(leftMEnu)
-        self.view.addSubview(leftMEnu.view)
-        UIView.animate(withDuration: 0.4) {
-            frame.origin.x = 0
-            leftMEnu.view.frame = frame
-        }
-    }
+  
     
     
     

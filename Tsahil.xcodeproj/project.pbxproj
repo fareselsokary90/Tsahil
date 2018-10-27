@@ -31,6 +31,8 @@
 		7E8D2C34217DB1DB008941A6 /* sideMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8D2C32217DB1DB008941A6 /* sideMenu.xib */; };
 		7E8D2C35217DB1DB008941A6 /* sideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D2C33217DB1DB008941A6 /* sideMenu.swift */; };
 		7E8D2C37217DB9D1008941A6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D2C36217DB9D1008941A6 /* Home.swift */; };
+		7EA8DD092181DB2900E7FED9 /* CosmosViewAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8DD082181DB2900E7FED9 /* CosmosViewAlert.swift */; };
+		7EF3D4C421848008008040B6 /* ClinteProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF3D4C321848008008040B6 /* ClinteProfile.swift */; };
 		EE78B4B718A97A09A8610608 /* Pods_Tsahil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C2DB5723EA922B6FE26AC0 /* Pods_Tsahil.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		7E8D2C32217DB1DB008941A6 /* sideMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = sideMenu.xib; sourceTree = "<group>"; };
 		7E8D2C33217DB1DB008941A6 /* sideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sideMenu.swift; sourceTree = "<group>"; };
 		7E8D2C36217DB9D1008941A6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		7EA8DD082181DB2900E7FED9 /* CosmosViewAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmosViewAlert.swift; sourceTree = "<group>"; };
+		7EF3D4C321848008008040B6 /* ClinteProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinteProfile.swift; sourceTree = "<group>"; };
 		7F4F2F2F3D27941D06201D2E /* Pods-Tsahil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tsahil.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tsahil/Pods-Tsahil.release.xcconfig"; sourceTree = "<group>"; };
 		90C9557A4CED1FDA1615D0FD /* Pods-Tsahil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tsahil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tsahil/Pods-Tsahil.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +95,7 @@
 				7E8CC0D5217F30F100D4ABB1 /* ResultOnMapViewController.swift */,
 				7E8CC0D7217F31B600D4ABB1 /* mapResultOnTable.swift */,
 				7E0F97962180B65A00E9E622 /* WorkShopProfile.swift */,
+				7EF3D4C321848008008040B6 /* ClinteProfile.swift */,
 			);
 			path = controlers;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 				7E2CF9782176215A00408DB1 /* radioButtonCheckBox.swift */,
 				7E0F979821819A2E00E9E622 /* MenuCollectionViewCell.swift */,
 				7E0F979A2181C1A600E9E622 /* ReviewCellTableViewCell.swift */,
+				7EA8DD082181DB2900E7FED9 /* CosmosViewAlert.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -302,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EF3D4C421848008008040B6 /* ClinteProfile.swift in Sources */,
 				7E83691221786DA5001881AF /* ForfetPasswordPhoneNum.swift in Sources */,
 				7E2CF9792176215A00408DB1 /* radioButtonCheckBox.swift in Sources */,
 				7E8CC0D8217F31B600D4ABB1 /* mapResultOnTable.swift in Sources */,
@@ -319,6 +326,7 @@
 				7E0F979921819A2E00E9E622 /* MenuCollectionViewCell.swift in Sources */,
 				7E2CF97B2176232800408DB1 /* SignIn.swift in Sources */,
 				7E88383221772D7300DB90D2 /* ChangePassword.swift in Sources */,
+				7EA8DD092181DB2900E7FED9 /* CosmosViewAlert.swift in Sources */,
 				7E8D2C35217DB1DB008941A6 /* sideMenu.swift in Sources */,
 				7E2CF9732175E70400408DB1 /* ImageBorder.swift in Sources */,
 				7E2CF9752176119600408DB1 /* RoungView.swift in Sources */,

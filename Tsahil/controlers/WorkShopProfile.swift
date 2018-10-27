@@ -11,8 +11,9 @@ import Cosmos
 import MapKit
 class WorkShopProfile: UIViewController {
     
-    //Outlets
+    // MARK: -  Outlets
     @IBOutlet weak var MenuCollection: UICollectionView!
+    @IBOutlet weak var SideMenu: UIButton!
     @IBOutlet weak var AddReview: UIButton!
     @IBOutlet weak var widthConstrain: NSLayoutConstraint!
     @IBOutlet weak var sendRequest: RoundButtonCorners!
@@ -20,8 +21,9 @@ class WorkShopProfile: UIViewController {
     @IBOutlet weak var tableViewReview: UITableView!
     @IBOutlet weak var MApView: MKMapView!
     @IBOutlet weak var DetailsView: UIView!
+    @IBOutlet weak var ReviewView: UIView!
     @IBOutlet weak var ViewTableReview: UIView!
-    //Declration
+    // MARK: - Declration
     let menuTitle = ["Location", "Reviews", "About"]
     var selectedIndex = 0
     var selectedIndexPath = IndexPath(item: 0, section: 0)
@@ -32,6 +34,12 @@ class WorkShopProfile: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        tableViewReview.rowHeight = UITableView.automaticDimension
+        tableViewReview.estimatedRowHeight = 65
+        
+        
         sendRequest.selectedButton(title: "  Send Service Request", iconName: "send-button")
         AddReview.selectedButton(title: " Add Review", iconName: "add")
         MenuCollection.selectItem(at: selectedIndexPath, animated: false, scrollPosition: .centeredHorizontally)
@@ -43,7 +51,7 @@ class WorkShopProfile: UIViewController {
     }
     
     
-    // MARK -> Create Indicator
+    // MARK: - Create Indicator
     
     func refreshIndecator(x : CGFloat){
         UIView.animate(withDuration: 0.3) {
@@ -59,7 +67,7 @@ class WorkShopProfile: UIViewController {
         MenuCollection.addSubview(indicatorView)
     }
     
-    //MARK -> Create swipeGesture to view to refresh indicator position
+    //MARK: - Create swipeGesture to view to refresh indicator position
     func SwipGesture(){
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(SwipeGesure(_:)))
         leftSwipe.direction = .left
@@ -83,10 +91,23 @@ class WorkShopProfile: UIViewController {
         selectedIndexPath = IndexPath(item: selectedIndex, section: 0)
         refreshIndecator(x : CGFloat(selectedIndex))
         MenuCollection.selectItem(at: selectedIndexPath, animated: true, scrollPosition: .centeredHorizontally)
+        if selectedIndex == 0{
+            MApView.isHidden = false
+            ViewTableReview.isHidden = true
+            ReviewView.isHidden = true
+        }else if selectedIndex == 1 {
+            MApView.isHidden = true
+            ViewTableReview.isHidden = false
+            ReviewView.isHidden = true
+        }else{
+            MApView.isHidden = true
+            ViewTableReview.isHidden = true
+            ReviewView.isHidden = false
+        }
     }
     
     
-    
+    // MARK: - Update Cosmos Rating View
     func updateCosmosView(){
         CosmosView.rating = 4
         CosmosView.didFinishTouchingCosmos = { rating in
@@ -100,23 +121,83 @@ class WorkShopProfile: UIViewController {
         // Other fill modes: .half, .precise
     }
     
+    //TODO: - Creat RatingViewInAlert
+    func RatingView(alert : UIAlertController)-> CosmosViewAlert{
+        let width : CGFloat = 130
+        let height : CGFloat = 20
+        let margin:CGFloat = 25.0
+        let rect = CGRect(x: (alert.view.frame.width / 2) - width , y: margin, width: width, height: height)
+        let customView = CosmosViewAlert(frame : rect)
+        customView.rating = 0.5
+        customView.text = "0.5"
+        customView.tintColor = #colorLiteral(red: 0.1921568662, green: 0.007843137719, blue: 0.09019608051, alpha: 1)
+        customView.didFinishTouchingCosmos = { rating in
+        }
+        customView.didTouchCosmos = { rating in
+            customView.text = String(rating)
+        }
+        customView.settings.updateOnTouch = true
+        customView.settings.fillMode = .half
+        return customView
+    }
     
     
+    
+    //TODO: Create alert
+    func CreatAlert(){
+        let alert = UIAlertController(title: "\n", message: nil, preferredStyle: .alert)
+        let customView = RatingView(alert: alert)
+        alert.addTextField { (UITextField) in
+            UITextField.placeholder = "Message..."
+            let heightConstraint = NSLayoutConstraint(item: UITextField, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 100)
+            UITextField.addConstraint(heightConstraint)
+        }
+        alert.view.addSubview(customView)
+        let addReview = UIAlertAction(title: "Submit", style: .default, handler: nil)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(addReview)
+        alert.addAction(cancel)
+        present(alert , animated: true , completion: nil)
+    }
+    
+    
+    //TODO: - SHOW LEFT MENU
+    @objc func ShowLeftMenu(){
+        let leftMEnu = sideMenu.init(nibName: "sideMenu", bundle: nil)
+        var frame = leftMEnu.view.frame
+        frame.origin.x = -UIScreen.main.bounds.size.width
+        leftMEnu.view.frame = frame
+        self.addChild(leftMEnu)
+        self.view.addSubview(leftMEnu.view)
+        UIView.animate(withDuration: 0.4) {
+            frame.origin.x = 0
+            leftMEnu.view.frame = frame
+        }
+    }
+    
+    
+    
+    // MARK: - IBAction
     @IBAction func SendServiceRequest(_ sender: UIButton) {
         UIView.animate(withDuration: 0.1) {
             self.sendRequest.selectedButton(title: "  Service Request Sent", iconName: "send-message-button")
         }
     }
     
+    @IBAction func AddReview(_ sender: UIButton) {
+        CreatAlert()
+    }
     
+    @IBAction func showSideMenu(_ sender: Any) {
+        ShowLeftMenu()
+    }
     
     
 }
 
 extension UIButton {
     func selectedButton(title:String, iconName: String){
-//        self.backgroundColor = #colorLiteral(red: 0.1686026156, green: 0.5230491161, blue: 0.8715298772, alpha: 1)
-//        //            UIColor(red: 0, green: 118/255, blue: 254/255, alpha: 1)
+
         self.setTitle(title, for: .normal)
         self.setTitle(title, for: .highlighted)
         
@@ -133,6 +214,7 @@ extension UIButton {
     }
 }
 
+//   //////////////////////////////////////////////
 
 extension WorkShopProfile : UICollectionViewDelegate ,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -155,16 +237,24 @@ extension WorkShopProfile : UICollectionViewDelegate ,UICollectionViewDataSource
         if indexPath.item == 0{
             MApView.isHidden = false
             ViewTableReview.isHidden = true
-        }else{
+            ReviewView.isHidden = true
+        }else if indexPath.item == 1 {
             MApView.isHidden = true
             ViewTableReview.isHidden = false
+            ReviewView.isHidden = true
+        }else{
+            MApView.isHidden = true
+            ViewTableReview.isHidden = true
+            ReviewView.isHidden = false
         }
     }
 }
 
+// //////////////////////////////////////////////////////
+
 extension WorkShopProfile : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -173,6 +263,4 @@ extension WorkShopProfile : UITableViewDelegate, UITableViewDataSource{
         cell.layoutIfNeeded()
         return cell
     }
-    
-    
 }

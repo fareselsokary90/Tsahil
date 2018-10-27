@@ -57,6 +57,20 @@ class sideMenu: UIViewController {
         }
         
     }
+    
+    
+    @objc func ShowLeftMenu(){
+        let leftMEnu = sideMenu.init(nibName: "sideMenu", bundle: nil)
+        var frame = leftMEnu.view.frame
+        frame.origin.x = -UIScreen.main.bounds.size.width
+        leftMEnu.view.frame = frame
+        self.addChild(leftMEnu)
+        self.view.addSubview(leftMEnu.view)
+        UIView.animate(withDuration: 0.4) {
+            frame.origin.x = 0
+            leftMEnu.view.frame = frame
+        }
+    }
 //    @IBAction func btnPressed(_ sender: Any) {
 //        closeSideMenu()
 //        let viewControler = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "test")
