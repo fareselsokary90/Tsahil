@@ -28,7 +28,7 @@ class sideMenu: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let swipeleft = UISwipeGestureRecognizer(target: self, action: #selector(closeSideMenu))
+        let swipeleft = UISwipeGestureRecognizer(target: self, action: #selector(closeSideMenu(Duration:)))
         swipeleft.direction = .left
         self.view.addGestureRecognizer(swipeleft)
        
@@ -47,8 +47,8 @@ class sideMenu: UIViewController {
     
     
 
-   @objc func closeSideMenu(){
-        UIView.animate(withDuration: 0.3, animations: {
+    @objc func closeSideMenu(Duration : Float = 0.3){
+        UIView.animate(withDuration: TimeInterval(Duration), animations: {
             var frame = self.view.frame
             frame.origin.x = -UIScreen.main.bounds.size.width
             self.view.frame = frame
@@ -88,19 +88,38 @@ class sideMenu: UIViewController {
     
     
     @IBAction func home(_ sender: UIButton) {
-        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let controler = storyBoard.instantiateViewController(withIdentifier: "Home") as! Home
+        self.present(controler, animated: true , completion: nil)
+        closeSideMenu(Duration: 0.1)
     }
     
     @IBAction func Request(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let controler = storyBoard.instantiateViewController(withIdentifier: "Request") as! RequestView
+        self.present(controler, animated: true , completion: nil)
+        closeSideMenu(Duration: 0.1)
     }
     
     @IBAction func setting(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let controler = storyBoard.instantiateViewController(withIdentifier: "Setting") 
+        self.present(controler, animated: true , completion: nil)
+        closeSideMenu(Duration: 0.1)
     }
     
     @IBAction func notification(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let controler = storyBoard.instantiateViewController(withIdentifier: "Notification")
+        self.present(controler, animated: true , completion: nil)
+        closeSideMenu(Duration: 0.1)
     }
     
     @IBAction func contactUS(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let controler = storyBoard.instantiateViewController(withIdentifier: "Contact") as! ContactUs
+        self.present(controler, animated: true , completion: nil)
+        closeSideMenu(Duration: 0.1)
     }
 }
 

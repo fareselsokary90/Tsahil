@@ -34,7 +34,13 @@
 		7E96967F21849EAB00A1F0D8 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E96967E21849EAB00A1F0D8 /* Request.swift */; };
 		7E9696832184D3B800A1F0D8 /* ContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9696822184D3B800A1F0D8 /* ContactUs.swift */; };
 		7E9696852184DC4700A1F0D8 /* RequestDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9696842184DC4700A1F0D8 /* RequestDetails.swift */; };
+		7EA7FB8A2185995B004F6389 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7FB892185995B004F6389 /* Setting.swift */; };
+		7EA7FB8C2185A49B004F6389 /* UpdateUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7FB8B2185A49B004F6389 /* UpdateUserData.swift */; };
+		7EA7FB8E2185B3F2004F6389 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA7FB8D2185B3F2004F6389 /* NotificationView.swift */; };
 		7EA8DD092181DB2900E7FED9 /* CosmosViewAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8DD082181DB2900E7FED9 /* CosmosViewAlert.swift */; };
+		7EDA7AC22185C29200A1A13B /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA7AC12185C29200A1A13B /* NotificationCell.swift */; };
+		7EDA7AC62185C8CF00A1A13B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA7AC52185C8CF00A1A13B /* Constants.swift */; };
+		7EDA7AC82185C8DE00A1A13B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA7AC72185C8DE00A1A13B /* AuthService.swift */; };
 		7EF3D4C421848008008040B6 /* ClinteProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF3D4C321848008008040B6 /* ClinteProfile.swift */; };
 		EE78B4B718A97A09A8610608 /* Pods_Tsahil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C2DB5723EA922B6FE26AC0 /* Pods_Tsahil.framework */; };
 /* End PBXBuildFile section */
@@ -70,7 +76,13 @@
 		7E96967E21849EAB00A1F0D8 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		7E9696822184D3B800A1F0D8 /* ContactUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
 		7E9696842184DC4700A1F0D8 /* RequestDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDetails.swift; sourceTree = "<group>"; };
+		7EA7FB892185995B004F6389 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		7EA7FB8B2185A49B004F6389 /* UpdateUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserData.swift; sourceTree = "<group>"; };
+		7EA7FB8D2185B3F2004F6389 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		7EA8DD082181DB2900E7FED9 /* CosmosViewAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmosViewAlert.swift; sourceTree = "<group>"; };
+		7EDA7AC12185C29200A1A13B /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		7EDA7AC52185C8CF00A1A13B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7EDA7AC72185C8DE00A1A13B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		7EF3D4C321848008008040B6 /* ClinteProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinteProfile.swift; sourceTree = "<group>"; };
 		7F4F2F2F3D27941D06201D2E /* Pods-Tsahil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tsahil.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tsahil/Pods-Tsahil.release.xcconfig"; sourceTree = "<group>"; };
 		90C9557A4CED1FDA1615D0FD /* Pods-Tsahil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tsahil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tsahil/Pods-Tsahil.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +117,9 @@
 				7E96967E21849EAB00A1F0D8 /* Request.swift */,
 				7E9696822184D3B800A1F0D8 /* ContactUs.swift */,
 				7E9696842184DC4700A1F0D8 /* RequestDetails.swift */,
+				7EA7FB892185995B004F6389 /* Setting.swift */,
+				7EA7FB8B2185A49B004F6389 /* UpdateUserData.swift */,
+				7EA7FB8D2185B3F2004F6389 /* NotificationView.swift */,
 			);
 			path = controlers;
 			sourceTree = "<group>";
@@ -126,8 +141,6 @@
 				7E2CF9742176119600408DB1 /* RoungView.swift */,
 				7E2CF97621761BDC00408DB1 /* RoundTextfield.swift */,
 				7E2CF9782176215A00408DB1 /* radioButtonCheckBox.swift */,
-				7E0F979821819A2E00E9E622 /* MenuCollectionViewCell.swift */,
-				7E0F979A2181C1A600E9E622 /* ReviewCellTableViewCell.swift */,
 				7EA8DD082181DB2900E7FED9 /* CosmosViewAlert.swift */,
 			);
 			path = views;
@@ -154,6 +167,9 @@
 		7E7167462175C71E0034ECCB /* Tsahil */ = {
 			isa = PBXGroup;
 			children = (
+				7EDA7AC92185C97400A1A13B /* Utilites */,
+				7EDA7AC42185C8B100A1A13B /* Services */,
+				7EDA7AC32185C85A00A1A13B /* CustomCells */,
 				7E8D2C31217DB1AF008941A6 /* sideMenu */,
 				7E2CF96B2175E6CA00408DB1 /* views */,
 				7E2CF96A2175E6A500408DB1 /* Model */,
@@ -173,6 +189,32 @@
 				7E8D2C32217DB1DB008941A6 /* sideMenu.xib */,
 			);
 			path = sideMenu;
+			sourceTree = "<group>";
+		};
+		7EDA7AC32185C85A00A1A13B /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				7E0F979821819A2E00E9E622 /* MenuCollectionViewCell.swift */,
+				7E0F979A2181C1A600E9E622 /* ReviewCellTableViewCell.swift */,
+				7EDA7AC12185C29200A1A13B /* NotificationCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		7EDA7AC42185C8B100A1A13B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7EDA7AC72185C8DE00A1A13B /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7EDA7AC92185C97400A1A13B /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				7EDA7AC52185C8CF00A1A13B /* Constants.swift */,
+			);
+			path = Utilites;
 			sourceTree = "<group>";
 		};
 		A68EDE67D2767B6F325479B0 /* Pods */ = {
@@ -321,6 +363,8 @@
 				7E9696852184DC4700A1F0D8 /* RequestDetails.swift in Sources */,
 				7E83691221786DA5001881AF /* ForfetPasswordPhoneNum.swift in Sources */,
 				7E2CF9792176215A00408DB1 /* radioButtonCheckBox.swift in Sources */,
+				7EA7FB8A2185995B004F6389 /* Setting.swift in Sources */,
+				7EDA7AC62185C8CF00A1A13B /* Constants.swift in Sources */,
 				7E8CC0D8217F31B600D4ABB1 /* mapResultOnTable.swift in Sources */,
 				7E88383421774A2600DB90D2 /* SignUp.swift in Sources */,
 				7E8CC0D6217F30F100D4ABB1 /* ResultOnMapViewController.swift in Sources */,
@@ -333,13 +377,17 @@
 				7E8D2C37217DB9D1008941A6 /* Home.swift in Sources */,
 				7E0F97972180B65A00E9E622 /* WorkShopProfile.swift in Sources */,
 				7E7167482175C71E0034ECCB /* AppDelegate.swift in Sources */,
+				7EA7FB8C2185A49B004F6389 /* UpdateUserData.swift in Sources */,
 				7E2CF9712175E70400408DB1 /* RoundButtonCorners.swift in Sources */,
 				7E0F979B2181C1A600E9E622 /* ReviewCellTableViewCell.swift in Sources */,
 				7E0F979921819A2E00E9E622 /* MenuCollectionViewCell.swift in Sources */,
+				7EDA7AC22185C29200A1A13B /* NotificationCell.swift in Sources */,
 				7E2CF97B2176232800408DB1 /* SignIn.swift in Sources */,
 				7E88383221772D7300DB90D2 /* ChangePassword.swift in Sources */,
 				7EA8DD092181DB2900E7FED9 /* CosmosViewAlert.swift in Sources */,
+				7EA7FB8E2185B3F2004F6389 /* NotificationView.swift in Sources */,
 				7E8D2C35217DB1DB008941A6 /* sideMenu.swift in Sources */,
+				7EDA7AC82185C8DE00A1A13B /* AuthService.swift in Sources */,
 				7E2CF9732175E70400408DB1 /* ImageBorder.swift in Sources */,
 				7E2CF9752176119600408DB1 /* RoungView.swift in Sources */,
 			);

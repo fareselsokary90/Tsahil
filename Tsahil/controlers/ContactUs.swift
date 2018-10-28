@@ -24,6 +24,7 @@ class ContactUs: UIViewController {
     
 
     @IBAction func BackButton(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func sendButton(_ sender: UIButton) {
