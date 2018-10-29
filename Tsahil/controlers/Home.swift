@@ -16,10 +16,11 @@ class Home: UIViewController {
     @IBOutlet weak var dropList2: UITableView!
     @IBOutlet weak var dropList3: UITableView!
     
-    @IBOutlet weak var textField0: UITextField!
-    @IBOutlet weak var textField1: UITextField!
-    @IBOutlet weak var textField2: UITextField!
-    @IBOutlet weak var textField3: UITextField!
+   
+    @IBOutlet weak var Button: UIButton!
+    @IBOutlet weak var Button1: UIButton!
+    @IBOutlet weak var Button2: UIButton!
+    @IBOutlet weak var Button3: UIButton!
     
     
     
@@ -28,11 +29,27 @@ class Home: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        droplistRoundCorner()
+        
        assignbackground()
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(ShowLeftMenu))
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
         // Do any additional setup after loading the view.
+    }
+    
+    
+    func droplistRoundCorner(){
+        dropList.layer.cornerRadius = 10
+        dropList.clipsToBounds = true
+        dropList1.layer.cornerRadius = 10
+        dropList1.clipsToBounds = true
+        dropList2.layer.cornerRadius = 10
+        dropList2.clipsToBounds = true
+        dropList3.layer.cornerRadius = 10
+        dropList3.clipsToBounds = true
+        
     }
     
     
@@ -84,31 +101,18 @@ class Home: UIViewController {
     
     
     @IBAction func droplistButton(_ sender: UIButton) {
-        if sender.tag == 1{
+        if sender.tag == 1 || sender.tag == 21{
             toggleDropList(table: dropList)
-        }else if sender.tag == 2{
+        }else if sender.tag == 2 || sender.tag == 32{
             toggleDropList(table: dropList1)
-        }else if sender.tag == 3{
+        }else if sender.tag == 3 || sender.tag == 33{
             toggleDropList(table: dropList2)
-        }else if sender.tag == 4{
+        }else if sender.tag == 4 || sender.tag == 34{
             toggleDropList(table: dropList3)
         }
     }
     
-    @IBAction func textField(_ sender: UITextField) {
-            dropList.isHidden = false
-    }
-    
-    @IBAction func textField1(_ sender: UITextField) {
-        dropList1.isHidden = false
-    }
-    @IBAction func textField2(_ sender: UITextField) {
-        dropList2.isHidden = false
-    }
-    
-    @IBAction func textField3(_ sender: UITextField) {
-        dropList3.isHidden = false
-    }
+   
     
     @IBAction func showLeftMenu(_ sender: Any) {
         ShowLeftMenu()
@@ -130,16 +134,16 @@ extension Home : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView == dropList {
-        textField0.text = list[indexPath.row]
-        toggleDropList(table: dropList)
+            Button.setTitle(list[indexPath.row], for: .normal)
+            toggleDropList(table: dropList)
         }else if tableView == dropList1{
-            textField1.text = list[indexPath.row]
+            Button1.setTitle(list[indexPath.row], for: .normal)
             toggleDropList(table: dropList1)
         }else if tableView == dropList2{
-            textField2.text = list[indexPath.row]
+            Button2.setTitle(list[indexPath.row], for: .normal)
             toggleDropList(table: dropList2)
         }else if tableView == dropList3{
-            textField3.text = list[indexPath.row]
+            Button3.setTitle(list[indexPath.row], for: .normal)
             toggleDropList(table: dropList3)
         }
     }
